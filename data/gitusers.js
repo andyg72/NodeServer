@@ -64,5 +64,5 @@ var gitusers = [
     "created_at": "2014-11-05T19:45:44Z",
     "updated_at": "2015-02-04T17:41:52Z"
   }
-]
-  
+];
+
