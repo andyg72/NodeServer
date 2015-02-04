@@ -14,6 +14,10 @@ app.get('/beverages', function(request, response) {
   response.json({"Tea":"Tetley"});
 });
 
+app.get('/gitusers', function(request, response) {
+  response.render('gitusers');
+});
+
 server.listen(9999, function() {
   console.log('Server is listening on port 9999');
 });

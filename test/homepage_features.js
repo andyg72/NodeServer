@@ -24,4 +24,10 @@ var host = 'http://localhost:9999/';
     });
   });
 
+  it('should have our names in it', function() {
+    casper.thenOpen(host + 'gitusers', function() {
+      expect('body').to.have.text('Andy');
+    });
+  });
+
 });
