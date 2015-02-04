@@ -1,4 +1,11 @@
 hello world
 
-<% var git = require('../data/gitusers.js') %>
-<%= git.gitusers %>
+<%- andy[0].name; %> <br>
+
+<% for (var i = 0; i < andy.length; i++) { %>
+  <% for (var property in andy[i]) { %>
+    <% var andyItem = andy[i] %>
+    <%- property %>: 
+    <%- andyItem[property] %> <br>
+  <% } %>
+<% } %>
