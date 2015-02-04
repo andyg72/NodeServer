@@ -19,5 +19,8 @@
     "mocha": "^2.1.0",
     "mocha-casperjs": "^0.5.3",
     "phantomjs": "^1.9.15"
+  },
+  "dependencies": {
+    "express": "^4.11.2"
   }
 }
