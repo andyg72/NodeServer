@@ -19,6 +19,14 @@ app.get('/gitusers', function(request, response) {
   response.render('gitusers', gits);
 });
 
+app.get('/userdetails', function(request, response) {
+  var propertyValueArray = [];
+  for (var i = 0; i < gits.gitusers.length; i++) {
+    propertyValueArray.push(gits.gitusers[i][request.query.property]);
+  }
+  response.render('userdetails', {data: propertyValueArray});
+});
+
 server.listen(9999, function() {
   console.log('Server is listening on port 9999');
 });

@@ -30,4 +30,10 @@ var host = 'http://localhost:9999/';
     });
   });
 
+  it('should return the property specified as the url parameter', function() {
+    casper.thenOpen(host + 'userdetails/?property=login', function() {
+      expect('body').to.include.text('stepholdcorn');
+    });
+  });
+
 });
