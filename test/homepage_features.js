@@ -32,7 +32,13 @@ var host = 'http://localhost:9999/';
 
   it('should return the property specified as the url parameter', function() {
     casper.thenOpen(host + 'userdetails/?property=login', function() {
-      expect('body').to.include.text('stepholdcorn');
+      expect('body').to.include.text('stepholdcorn', 'andyg72');
+    });
+  });
+
+  it('should return the property specified as the final path of URL', function() {
+    casper.thenOpen(host + 'userdetails/id', function() {
+      expect('body').to.include.text('9577604', '8938227');      
     });
   });
 
