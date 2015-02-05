@@ -1,11 +1,11 @@
 hello world
 
-<%- andy[0].name; %> <br>
+<%- gitusers[0].name; %> <br>
 
-<% for (var i = 0; i < andy.length; i++) { %>
-  <% for (var property in andy[i]) { %>
-    <% var andyItem = andy[i] %>
+<% for (var i = 0; i < gitusers.length; i++) { %>
+  <% var gitusersItem = gitusers[i] %>
+  <% for (var property in gitusersItem) { %>
     <%- property %>: 
-    <%- andyItem[property] %> <br>
+    <%- gitusersItem[property] %> <br>
   <% } %>
 <% } %>

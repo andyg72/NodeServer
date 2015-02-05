@@ -1,4 +1,4 @@
-var andy = 
+var gitusers = 
   [ {
         "login": "andyg72",
         "id": 8938227,
@@ -66,5 +66,5 @@ var andy =
   }
 ];
 
-exports.andy = andy;
+exports.gitusers = gitusers;
 
