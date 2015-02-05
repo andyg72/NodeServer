@@ -27,9 +27,8 @@ app.get('/userdetails', function(request, response) {
   response.render('userdetails', {data: propertyValueArray});
 });
 
-app.get('/userdetails/*', function(request, response) {
-  var urlArray = request.url.split('/');
-  var property = urlArray[urlArray.length -1];
+app.get('/userdetails/:property', function(request, response) {
+  var property = request.params.property;
   var propertyValueArray = [];
   for (var i = 0; i < gits.gitusers.length; i++) {
     propertyValueArray.push(gits.gitusers[i][property]);
